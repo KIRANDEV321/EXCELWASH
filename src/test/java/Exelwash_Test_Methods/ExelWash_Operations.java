@@ -21,17 +21,7 @@ public class ExelWash_Operations {
 	Services Services;
 	Home_Page Home_Page;
 
-	/*
-	 * @BeforeTest public void setup() throws InterruptedException {
-	 * //System.setProperty("webdriver.chrome.driver",
-	 * "C:\\BrowserStack\\chromedriver.exe"); driver = new ChromeDriver();
-	 * driver.manage().window().maximize();
-	 * driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	 * driver.get("https://exelwash.com");
-	 * 
-	 * driver.findElement(By.xpath("//a[normalize-space()='Menu']")).click();
-	 * Thread.sleep(2000); }
-	 */
+
 
 	@Test(priority = 0)
 	public void enter_user_SignUp_Details() throws InterruptedException {
@@ -40,13 +30,12 @@ public class ExelWash_Operations {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://exelwash.com");
 
-		// driver.findElement(By.xpath("//a[normalize-space()='Menu']")).click();
-		// Thread.sleep(2000);
+	
 
 		Sign_Up_Page = new Sign_Up_Page(driver);
 		Sign_Up_Page.clickOnMenu();
 		Sign_Up_Page.clickOnSignUpOption();
-		Sign_Up_Page.enterEmail("Test");
+		Sign_Up_Page.enterEmail("SWATHKIRANDEV@gamil.com");
 		Sign_Up_Page.enterPasswrod("123");
 		Sign_Up_Page.enterconfirmPasswrod("123");
 		// Sign_Up_Page.clickOnSignUpButton();

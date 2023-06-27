@@ -5,7 +5,7 @@
     <classes>
       <class name="Exelwash_Test_Methods.ExelWash_Operations">
         <methods>
-          <include name="chacking_Home_Page_Functionality"/>
+          <include name="enter_user_SignUp_Details"/>
         </methods>
       </class> <!-- Exelwash_Test_Methods.ExelWash_Operations -->
     </classes>
